@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start.ConfirmAcivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bac" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Choose Food Take Order"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="#8D000000"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#8D000000"
+        >
+
+        <Button
+            android:id="@+id/btn_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login With Admin"
+            android:background="@drawable/button_gradient"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I'm user"
+            android:background="@drawable/button_stroke_gradient"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

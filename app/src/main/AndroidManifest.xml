@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rehman.eorderingsystem">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EOrderingSystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".Start.QRScanActiivty"
+            android:exported="false" />
+        <activity
+            android:name=".ComplainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserFoodInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.MyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.FoodCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminCompainAcitvity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminManageMenuAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminAddMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminMainActivty"
+            android:exported="false" />
+        <activity
+            android:name=".Start.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.ConfirmAcivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

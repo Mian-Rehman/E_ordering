@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849171739189",
+    "project_id": "e-ordering-b857a",
+    "storage_bucket": "e-ordering-b857a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849171739189:android:57dc7f57db75816357f77c",
+        "android_client_info": {
+          "package_name": "com.rehman.eorderingsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC51LbsToklZdjMHcitw3kHvuhI11HNDzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

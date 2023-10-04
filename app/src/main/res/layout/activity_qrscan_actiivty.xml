@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Start.QRScanActiivty">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_image"
+        android:text="SCAN QR CODE TO GET FOOD MENU"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/dark_blue"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Table Number....."
+            android:background="@drawable/border_layout"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:drawableTint="@color/gold"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/dark_blue"
+            />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gradient"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</LinearLayout>

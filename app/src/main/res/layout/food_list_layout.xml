@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:backgroundTint="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/image_card"
+            android:text="Food Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_foodDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/image_card"
+            android:text="Desciption"
+            android:layout_below="@+id/tv_foodName"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_foodPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_foodDes"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/image_card"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_card"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="10dp"
+            android:elevation="10dp"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:id="@+id/food_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/edit_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tv_foodPrice"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/delete_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/gold" />
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/tv_foodPrice"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/gold" />
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/delete_image"
+            android:background="@color/gray"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

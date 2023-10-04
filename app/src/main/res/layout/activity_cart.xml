@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".User.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/gold"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/back_image"
+            android:text="Food Info"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:layout_above="@+id/cart_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/food_Image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_foodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_foodPrice"
+                    android:padding="5dp"
+                    android:text="Food Name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_foodPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="Food Price"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_foodDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_foodName"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Food Description"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Special instruction"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Please let us know if you are allergic oto anyting or if you need to avoid anyting"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/ed_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter instruction"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:gravity="top"
+                android:textSize="14sp"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/minus_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/minus_image"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/plus_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_count"
+            android:src="@drawable/plus" />
+
+        <Button
+            android:id="@+id/btn_addCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_gradient"
+            android:padding="15dp"
+            android:text="Place Order"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_ViewCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_gradient"
+            android:padding="15dp"
+            android:text="View Cart"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
